@@ -1,0 +1,5 @@
+DONE,200.0,2018-10-25,2018-10-25,2018-10-30,2018-10-25,12,50,0,24,24,47,94,100.0,200.0,SwimSuit,Red/Orange,Ahmed,Piranha City Jammer,4,340,1074,31.156645,Red underlay,Not Determined Yet,false,2018-10-29,23,48,-2.0833335,
+DONE,100.0,2018-10-25,2018-10-25,2018-11-13,2018-10-25,0,2,0,24,24,24,95,120.0,200.0,SwimSuit,Yellow/Black,Ahmed,Piranha City Jammer,4,341,1075,17.5,Red underlay,Moustafa,false,2018-10-31,24,24,0.0,
+DONE,150.0,2018-10-26,2018-10-26,2018-10-31,2018-10-26,23,60,0,34,10,19,98,60.0,40.0,Equipment,RED,Ahmed,mech bag,2,321,1077,45.157894,Red underlay,Moustafa,false,2018-10-29,10,20,-7.5,
+DONE,100.0,2018-10-25,2018-10-28,2018-10-26,2018-10-25,2,120,0,100,100,119,96,123.0,120.0,SwimRobe,red,Ahmed,amira size 14,2,23,1076,5.2336135,Red underlay,Moustafa,false,2018-10-26,100,120,-0.5,
+DONE,20.0,2018-11-01,2018-11-01,2018-11-01,2018-11-01,5,1,0,20,20,35,99,50.0,20.0,SwimSuit,Red,Ahmed,Piranha City Jammer Large,4,423,1078,8.428572,Red underlay,Moustafa,false,2018-11-01,20,40,-1.25,

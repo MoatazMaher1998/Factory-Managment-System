@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="796.0" prefWidth="1384.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Pirahna.MainController">
+   <children>
+      <Button layoutX="540.0" layoutY="610.0" mnemonicParsing="false" onAction="#showHomePage" prefHeight="69.0" prefWidth="273.0" text="Back">
+         <font>
+            <Font name="Akhbar MT" size="27.0" />
+         </font></Button>
+      <Button layoutX="283.0" layoutY="254.0" mnemonicParsing="false" onAction="#showNewJobForm" prefHeight="69.0" prefWidth="273.0" text="New Item">
+         <font>
+            <Font name="Akhbar MT" size="27.0" />
+         </font>
+      </Button>
+      <Button layoutX="813.0" layoutY="245.0" mnemonicParsing="false" onAction="#showOldJobForm" prefHeight="69.0" prefWidth="273.0" text="Old Item">
+         <font>
+            <Font name="Akhbar MT" size="27.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="203.0" fitWidth="234.0" layoutX="575.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@FB_IMG_1536099499280.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="540.0" layoutY="444.0" mnemonicParsing="false" onAction="#showHistoryForm" prefHeight="69.0" prefWidth="273.0" text="Jobs' History">
+         <font>
+            <Font name="Akhbar MT" size="27.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

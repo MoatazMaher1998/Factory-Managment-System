@@ -1,0 +1,2 @@
+READY,100.0,2018-11-03,Not Determined Yet,2019-03-04,2018-11-03,5,15,0,100,100,0,100,0.0,200.0,SwimSuit,Yellow/Black,Ahmed,Piranha City Jammer,4,341,1075,NaN,Red underlay,Moustafa,false,2019-03-04,0,100,-25.0,
+READY FOR CUTTING,0.0,Not Determined Yet,Not Determined Yet,Not Determined Yet,2019-05-09,0,0,0,4,0,0,101,0.0,0.0,SwimSuit,red,Ahmed,ahmed,4,123,1079,0.0,Red underlay,Not Determined Yet,true,Not Determined Yet,0,0,0.0,

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="648.0" prefWidth="895.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Pirahna.ReviewController">
+   <children>
+      <Button layoutX="16.0" layoutY="595.0" mnemonicParsing="false" onAction="#showHomePage" prefHeight="39.0" prefWidth="286.0" text="Back">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ImageView blendMode="MULTIPLY" fitHeight="259.0" fitWidth="504.0" layoutX="711.0" layoutY="196.0" nodeOrientation="INHERIT" rotate="270.0">
+         <image>
+            <Image url="@Piranha1.jpg" />
+         </image>
+         <rotationAxis>
+            <Point3D z="90.0" />
+         </rotationAxis>
+      </ImageView>
+      <Label layoutX="277.0" layoutY="116.0" prefHeight="39.0" prefWidth="79.0" text="Cost/Unit" textAlignment="JUSTIFY">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TotalCost" editable="false" layoutX="350.0" layoutY="120.0" prefHeight="30.0" prefWidth="115.0">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></TextField>
+      <TextField fx:id="MainMaterial" editable="false" layoutX="622.0" layoutY="41.0" prefHeight="30.0" prefWidth="115.0">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></TextField>
+      <Label layoutX="482.0" layoutY="155.0" prefHeight="39.0" prefWidth="127.0" text="Pieces/Unit" textAlignment="JUSTIFY">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="277.0" layoutY="36.0" prefHeight="39.0" prefWidth="41.0" text="Name" textAlignment="JUSTIFY">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="NumberOfPieces" editable="false" layoutX="625.0" layoutY="159.0" prefHeight="30.0" prefWidth="115.0">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></TextField>
+      <Label layoutX="480.0" layoutY="37.0" prefHeight="39.0" prefWidth="127.0" text="Main Material" textAlignment="JUSTIFY">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="UnderLayMaterial" editable="false" layoutX="624.0" layoutY="81.0" prefHeight="30.0" prefWidth="115.0">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></TextField>
+      <Label layoutX="482.0" layoutY="115.0" prefHeight="39.0" prefWidth="127.0" text="Patron Code" textAlignment="JUSTIFY">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="PatronCode" editable="false" layoutX="625.0" layoutY="120.0" prefHeight="30.0" prefWidth="115.0">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></TextField>
+      <Label layoutX="482.0" layoutY="76.0" prefHeight="39.0" prefWidth="145.0" text="Underlay Material" textAlignment="JUSTIFY">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Name" editable="false" layoutX="349.0" layoutY="41.0" prefHeight="30.0" prefWidth="115.0">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></TextField>
+      <Label layoutX="277.0" layoutY="76.0" prefHeight="39.0" prefWidth="50.0" text="ID" textAlignment="JUSTIFY">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ID" editable="false" layoutX="350.0" layoutY="81.0" prefHeight="30.0" prefWidth="115.0">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></TextField>
+      <Label layoutX="277.0" layoutY="152.0" prefHeight="39.0" prefWidth="50.0" text="Colour" textAlignment="JUSTIFY">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Colour" editable="false" layoutX="350.0" layoutY="157.0" prefHeight="30.0" prefWidth="115.0">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></TextField>
+      <Separator layoutY="198.0" prefHeight="13.0" prefWidth="264.0" />
+      <Label layoutX="1061.0" layoutY="91.0" />
+      <Label layoutX="29.0" layoutY="228.0" prefHeight="41.0" prefWidth="206.0" text="Cutting Information" textFill="#270ae1" underline="true">
+         <font>
+            <Font name="Modern No. 20" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="608.0" layoutY="27.0" prefHeight="41.0" prefWidth="174.0" text="Items' Information" textFill="#270ae1" underline="true" visible="false">
+         <font>
+            <Font name="Modern No. 20" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="111.0" prefHeight="39.0" prefWidth="179.0" text="Date Start" textAlignment="JUSTIFY">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="DateCutting" editable="false" layoutX="156.0" layoutY="325.0" prefHeight="30.0" prefWidth="95.0">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="13.0" layoutY="320.0" prefHeight="39.0" prefWidth="179.0" text="Date Cutting" textAlignment="JUSTIFY">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="DateStart" editable="false" layoutX="157.0" layoutY="120.0" prefHeight="30.0" prefWidth="95.0">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="14.0" layoutY="76.0" prefHeight="39.0" prefWidth="179.0" text="Order Number" textAlignment="JUSTIFY">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="DatePrinting" editable="false" layoutX="436.0" layoutY="288.0" prefHeight="30.0" prefWidth="95.0">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </TextField>
+      <Label fx:id="Label111" layoutX="285.0" layoutY="283.0" prefHeight="39.0" prefWidth="179.0" text="Date Printing" textAlignment="JUSTIFY">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="OrderNumber" editable="false" layoutX="157.0" layoutY="84.0" prefHeight="30.0" prefWidth="95.0">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="DateSewing" editable="false" layoutX="433.0" layoutY="465.0" prefHeight="30.0" prefWidth="95.0">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></TextField>
+      <Label layoutX="290.0" layoutY="458.0" prefHeight="39.0" prefWidth="179.0" text="Date Sewing" textAlignment="JUSTIFY">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="13.0" layoutY="280.0" prefHeight="39.0" prefWidth="179.0" text="Number Of Units Cut" textAlignment="JUSTIFY">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="CuttingPrice" editable="false" layoutX="159.0" layoutY="468.0" prefHeight="30.0" prefWidth="95.0">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="14.0" layoutY="463.0" prefHeight="39.0" prefWidth="106.0" text="Cutting Price" textAlignment="JUSTIFY">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="NumberOfUnitsCut" editable="false" layoutX="157.0" layoutY="286.0" prefHeight="30.0" prefWidth="95.0">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="14.0" layoutY="150.0" prefHeight="39.0" prefWidth="179.0" text="Losses" textAlignment="JUSTIFY">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="PrintingPrice" editable="false" layoutX="436.0" layoutY="323.0" prefHeight="30.0" prefWidth="95.0">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="287.0" layoutY="318.0" prefHeight="39.0" prefWidth="179.0" text="Printing Price" textAlignment="JUSTIFY">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Losses" editable="false" layoutX="157.0" layoutY="159.0" prefHeight="30.0" prefWidth="95.0">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="SewingPrice" editable="false" layoutX="434.0" layoutY="508.0" prefHeight="30.0" prefWidth="95.0">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></TextField>
+      <Label layoutX="289.0" layoutY="499.0" prefHeight="39.0" prefWidth="179.0" text="Sewing Price" textAlignment="JUSTIFY">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="13.0" layoutY="351.0" prefHeight="39.0" prefWidth="179.0" text="Meters Cut From RM" textAlignment="JUSTIFY">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="NumberOfUnitsPrinted" editable="false" layoutX="436.0" layoutY="356.0" prefHeight="30.0" prefWidth="95.0">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="285.0" layoutY="352.0" prefHeight="39.0" prefWidth="179.0" text="Number Of Pieces Printed" textAlignment="JUSTIFY">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="MetersCutMain" editable="false" layoutX="157.0" layoutY="358.0" prefHeight="30.0" prefWidth="95.0">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="NumberOfUnitsSewed" editable="false" layoutX="433.0" layoutY="548.0" prefHeight="30.0" prefWidth="95.0">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="285.0" layoutY="543.0" prefHeight="39.0" prefWidth="151.0" text="Number Of Units Sewed" textAlignment="JUSTIFY">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="MetersCutSec" editable="false" layoutX="157.0" layoutY="390.0" prefHeight="30.0" prefWidth="95.0">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></TextField>
+      <Label layoutX="14.0" layoutY="384.0" prefHeight="39.0" prefWidth="127.0" text="Meters Cut in UM" textAlignment="JUSTIFY">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="13.0" layoutY="424.0" prefHeight="39.0" prefWidth="115.0" text="Worker's Name" textAlignment="JUSTIFY">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="JobWorkerName" editable="false" layoutX="159.0" layoutY="428.0" prefHeight="30.0" prefWidth="95.0">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></TextField>
+      <Label layoutX="313.0" layoutY="226.0" prefHeight="41.0" prefWidth="218.0" text="Printing Information" textFill="#270ae1" underline="true">
+         <font>
+            <Font name="Modern No. 20" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="330.0" layoutY="399.0" prefHeight="41.0" prefWidth="206.0" text="Sewing Information" textFill="#270ae1" underline="true">
+         <font>
+            <Font name="Modern No. 20" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="35.0" prefHeight="41.0" prefWidth="206.0" text="Batch Information" textFill="#270ae1" underline="true">
+         <font>
+            <Font name="Modern No. 20" size="24.0" />
+         </font>
+      </Label>
+      <Separator layoutX="261.0" orientation="VERTICAL" prefHeight="561.0" prefWidth="0.0" />
+      <Separator layoutX="254.0" layoutY="198.0" prefHeight="13.0" prefWidth="494.0" />
+      <Separator layoutX="582.0" layoutY="201.0" orientation="VERTICAL" prefHeight="304.0" prefWidth="0.0" />
+      <Separator layoutX="263.0" layoutY="398.0" prefHeight="17.0" prefWidth="321.0" />
+   </children>
+</AnchorPane>

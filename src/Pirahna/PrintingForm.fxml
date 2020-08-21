@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="431.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Pirahna.PrintingFormController">
+   <children>
+      <ImageView blendMode="MULTIPLY" fitHeight="160.0" fitWidth="357.0" layoutX="19.0" layoutY="10.0">
+         <image>
+            <Image url="@Backgroud1.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="39.0" layoutY="366.0" mnemonicParsing="false" onAction="#showHomePage" prefHeight="31.0" prefWidth="84.0" text="Back" />
+      <Label layoutX="39.0" layoutY="202.0" prefHeight="25.0" prefWidth="158.0" text="Number Of Pieces Printed">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="251.0" prefHeight="31.0" prefWidth="129.0" text="Printing Cost">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="NumberOfUnitsPrintedTF" layoutX="243.0" layoutY="202.0" prefHeight="25.0" prefWidth="281.0" />
+      <TextField fx:id="PrintingCostTF" layoutX="243.0" layoutY="254.0" prefHeight="25.0" prefWidth="281.0" />
+      <Label layoutX="271.0" layoutY="118.0" prefHeight="25.0" prefWidth="100.0" text="Order Number">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="OrderNumberTF" editable="false" layoutX="376.0" layoutY="118.0" prefHeight="25.0" prefWidth="149.0" />
+      <TextField fx:id="ItemIDTF" editable="false" layoutX="98.0" layoutY="118.0" prefHeight="25.0" prefWidth="57.0" />
+      <DatePicker fx:id="Date" layoutX="243.0" layoutY="310.0" prefHeight="25.0" prefWidth="281.0" />
+      <Label layoutX="39.0" layoutY="118.0" prefHeight="25.0" prefWidth="57.0" text="Item ID">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="307.0" prefHeight="31.0" prefWidth="149.0" text="Date">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Button layoutX="249.0" layoutY="366.0" mnemonicParsing="false" onAction="#Proceed" prefHeight="31.0" prefWidth="281.0" text="Proceed" />
+      <Label blendMode="MULTIPLY" layoutX="155.0" layoutY="31.0" prefHeight="59.0" prefWidth="166.0" text="Printing" textAlignment="CENTER">
+         <font>
+            <Font name="David" size="48.0" />
+         </font>
+      </Label>
+      <ImageView blendMode="MULTIPLY" fitHeight="59.0" fitWidth="185.0" layoutX="358.0" layoutY="31.0">
+         <image>
+            <Image url="@Piranha1.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="39.0" layoutY="150.0" prefHeight="41.0" prefWidth="158.0" text="Printing Report" textFill="#270ae1" underline="true">
+         <font>
+            <Font name="Modern No. 20" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

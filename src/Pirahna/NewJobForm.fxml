@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="677.0" prefWidth="819.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Pirahna.NewJobFormContoller">
+   <children>
+      <Label layoutX="60.0" layoutY="170.0" prefHeight="39.0" prefWidth="77.0" text="Name" textAlignment="JUSTIFY">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView blendMode="MULTIPLY" fitHeight="101.0" fitWidth="275.0" layoutX="276.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Piranha1.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="60.0" layoutY="229.0" prefHeight="39.0" prefWidth="164.0" text="Main Material Used" textAlignment="JUSTIFY">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="548.0" prefHeight="39.0" prefWidth="77.0" text="Date" textAlignment="JUSTIFY">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="DatePicker12" layoutX="251.0" layoutY="555.0" prefHeight="25.0" prefWidth="331.0" promptText="Choose Date" />
+      <Label layoutX="60.0" layoutY="339.0" prefHeight="39.0" prefWidth="172.0" text="Colour" textAlignment="JUSTIFY">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="NameTF1" layoutX="251.0" layoutY="177.0" prefHeight="25.0" prefWidth="486.0" promptText="Enter name" />
+      <Label layoutX="60.0" layoutY="124.0" prefHeight="39.0" prefWidth="144.0" text="Category " textAlignment="JUSTIFY">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="Swimsuit" layoutX="251.0" layoutY="135.0" mnemonicParsing="false" onAction="#PopNoMix" prefHeight="17.0" prefWidth="77.0" selected="true" text="SwimSuit" />
+      <RadioButton fx:id="SwimRobe" layoutX="373.0" layoutY="135.0" mnemonicParsing="false" onAction="#PopNoMix" prefHeight="17.0" prefWidth="97.0" text="Swim Robe" />
+      <RadioButton fx:id="Equipment" layoutX="505.0" layoutY="135.0" mnemonicParsing="false" onAction="#PopNoMix" text="Equipment" />
+      <RadioButton fx:id="other" layoutX="630.0" layoutY="135.0" mnemonicParsing="false" onAction="#PopNoMix" text="Other" />
+      <TextField fx:id="ColourTF1" layoutX="251.0" layoutY="346.0" onKeyPressed="#InputTest" onKeyReleased="#InputTest" onKeyTyped="#InputTest" prefHeight="25.0" prefWidth="486.0" promptText="Enter Colour" />
+      <Label layoutX="60.0" layoutY="396.0" prefHeight="39.0" prefWidth="179.0" text="Patron Code" textAlignment="JUSTIFY">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="PatronCodeTF1" layoutX="251.0" layoutY="403.0" onKeyPressed="#InputTest" onKeyReleased="#InputTest" onKeyTyped="#InputTest" prefHeight="25.0" prefWidth="486.0" promptText="Enter Patron Code" />
+      <Label layoutX="55.0" layoutY="45.0" prefHeight="39.0" prefWidth="77.0" text="Order Number" textAlignment="JUSTIFY">
+         <font>
+            <Font name="System Bold Italic" size="9.0" />
+         </font>
+      </Label>
+      <TextField fx:id="OrderNumberTF" editable="false" layoutX="130.0" layoutY="52.0" prefHeight="0.0" prefWidth="52.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="ItemIDTF" editable="false" layoutX="706.0" layoutY="52.0" prefHeight="25.0" prefWidth="52.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <Label layoutX="631.0" layoutY="45.0" prefHeight="39.0" prefWidth="77.0" text="Product ID" textAlignment="JUSTIFY">
+         <font>
+            <Font name="System Bold" size="9.0" />
+         </font>
+      </Label>
+      <Button layoutX="55.0" layoutY="607.0" mnemonicParsing="false" onAction="#showHomePage" prefHeight="39.0" prefWidth="164.0" text="Back">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="290.0" layoutY="607.0" mnemonicParsing="false" onAction="#Writefile" prefHeight="25.0" prefWidth="461.0" text="Proceed">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="MaterialsCombobox" layoutX="251.0" layoutY="236.0" prefHeight="25.0" prefWidth="331.0" promptText="Choose The Main Material Only" visibleRowCount="50" />
+      <Label layoutX="60.0" layoutY="289.0" prefHeight="39.0" prefWidth="179.0" text="Underlay Material" textAlignment="JUSTIFY">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="UnderLayMaterialComboBox" layoutX="253.0" layoutY="296.0" prefHeight="25.0" prefWidth="331.0" promptText="None" visibleRowCount="50" />
+      <TextField fx:id="NumberOfUnitsTF" layoutX="251.0" layoutY="516.0" onKeyPressed="#InputTest" onKeyReleased="#InputTest" onKeyTyped="#InputTest" prefHeight="25.0" prefWidth="486.0" promptText="Enter Total Number Of Units To be Made" />
+      <Label layoutX="60.0" layoutY="509.0" prefHeight="39.0" prefWidth="179.0" text="Number Of Units" textAlignment="JUSTIFY">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="NumberOfPiecesTF" layoutX="251.0" layoutY="451.0" onKeyPressed="#InputTest" onKeyReleased="#InputTest" onKeyTyped="#InputTest" prefHeight="25.0" prefWidth="486.0" promptText="Enter Number Of Pieces " />
+      <Label layoutX="60.0" layoutY="444.0" prefHeight="39.0" prefWidth="179.0" text="Piece/Unit" textAlignment="JUSTIFY">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Line endX="100.0" layoutX="161.0" layoutY="498.0" startX="-100.0" />
+      <Line endX="100.0" layoutX="363.0" layoutY="498.0" startX="-100.0" />
+      <Line endX="100.0" layoutX="564.0" layoutY="498.0" startX="-100.0" />
+   </children>
+</AnchorPane>

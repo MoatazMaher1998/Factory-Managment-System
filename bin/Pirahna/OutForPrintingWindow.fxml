@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="200.0" prefWidth="313.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="Pirahna.OutForPrintingController">
+   <children>
+      <Button layoutX="84.0" layoutY="144.0" mnemonicParsing="false" onAction="#Proceed" prefHeight="27.0" prefWidth="135.0" text="Confirm" />
+      <Label layoutX="43.0" layoutY="92.0" prefHeight="17.0" prefWidth="126.0" text="Number Of Pieces Out">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="number" layoutX="180.0" layoutY="88.0" prefHeight="25.0" prefWidth="57.0" />
+      <ImageView blendMode="MULTIPLY" fitHeight="57.0" fitWidth="172.0" layoutX="66.0" layoutY="14.0">
+         <image>
+            <Image url="@Piranha1.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
